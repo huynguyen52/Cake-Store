@@ -1,0 +1,67 @@
+.header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 68.2rem;
+  height: 5.7rem;
+  background: url("../assets/images/background_pattern.jpg");
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #e2dfdc;
+  padding: 0 1.1rem;
+  margin: 2.2rem 0 4.2rem;
+  margin-left: auto;
+  .header-cart {
+    color: #d15f31;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    &:hover {
+      color: #5a3320;
+    }
+
+    span {
+      margin: 0 0.8rem;
+      color: #777777;
+    }
+    &:hover span {
+      color: #d15f31;
+    }
+
+    .cta-icon {
+      color: #5a3320;
+      margin-top: 0.3rem;
+    }
+    .cart-icon {
+      font-size: 2.8rem;
+      margin-top: -0.5rem;
+    }
+  }
+  .header-search form {
+    position: relative;
+    input {
+      padding: 0.5rem;
+      height: 3.5rem;
+      border: 0.1rem solid #e2dfdc;
+      outline: none;
+      text-transform: capitalize;
+      border-radius: 0.5rem;
+      background-color: #fff;
+      cursor: text;
+      width: 24rem;
+      font-size: 1.2rem;
+      font-family: "Open Sans", sans-serif;
+      &::placeholder {
+        color: #acacac;
+      }
+    }
+    .btn {
+      position: absolute;
+      right: 0.4rem;
+      top: 0.3rem;
+    }
+  }
+}

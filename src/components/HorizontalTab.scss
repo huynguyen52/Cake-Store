@@ -1,0 +1,70 @@
+.horizontal-tabs {
+  background: url("../assets/images/background_pattern.jpg") transparent repeat;
+  border-radius: 0.5rem;
+  padding: 0 1.2rem;
+  margin-top: 2.5rem;
+  &__list {
+    padding: 2rem 0;
+    width: 55%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      display: block;
+      width: 5rem;
+      height: 0.1rem;
+      background-color: #5a3320;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      display: block;
+      width: 5rem;
+      height: 0.1rem;
+      background-color: #5a3320;
+    }
+  }
+  &__item {
+    margin-right: 1rem;
+    cursor: pointer;
+    // margin-bottom: 2rem;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .btn--slider {
+    $position: -40px;
+    position: absolute;
+    bottom: 50%;
+    display: inherit;
+    border-radius: 100%;
+    background: url("../assets/images/background_pattern.jpg");
+    padding: 8px;
+    &.pre {
+      left: $position;
+    }
+    &.next {
+      right: $position;
+    }
+  }
+}
+
+//=============
+//Carousel style
+//=============
+.rec.rec-dot {
+  display: none;
+}
