@@ -15,10 +15,180 @@ import cake12 from "./assets/images/12-145x145.png";
 import cake16 from "./assets/images/16-145x145.png";
 import cake18 from "./assets/images/18-145x145.png";
 
+import pic5 from './assets/images/pic5.jpg';
+import pic6 from './assets/images/pic6-355x195_t.jpg';
+import pic7 from './assets/images/pic7.jpg';
+import pic8 from './assets/images/pic8.jpg';
+
+import {AiOutlineTwitter} from 'react-icons/ai';
+import {FaLinkedinIn, FaRss, FaMapMarkerAlt, FaEnvelope, FaYoutube} from 'react-icons/fa';
+import {ImPinterest} from 'react-icons/im';
+import {MdPhoneIphone} from 'react-icons/md';
+
+
 const data = {
   slides: [img1, img2, img3],
   banners: [banner1, banner2, banner3],
   tablist: ["featured", "latest", "best seller"],
+  contact: [
+    {
+      title: 'information',
+      links: [
+        {
+          icon: null,
+          text: 'store location',
+          to: '/'
+        },
+        {
+          icon: null,
+          text: 'shipping details',
+          to: '/'
+        },
+        {
+          icon: null,
+          text: 'track an order',
+          to: '/'
+        },
+        {
+          icon: null,
+          text: 'affiliate',
+          to: '/'
+        },
+        {
+          icon: null,
+          text: 'discount on products',
+          to: '/'
+        },
+      ]
+    },
+    {
+      title: 'customer service',
+      links: [
+        {
+          icon: null,
+          text: 'customer assistance',
+          to: '/'
+        },
+        {
+          icon: null,
+          text: 'net transaction',
+          to: '/'
+        },
+        {
+          icon: null,
+          text: 'delivery information',
+          to: '/'
+        },
+        {
+          icon: null,
+          text: 'international shipping',
+          to: '/'
+        },
+        {
+          icon: null,
+          text: 'discount on products',
+          to: '/'
+        },
+      ]
+    },
+    {
+      title: 'follow me',
+      links: [
+        {
+          icon: <AiOutlineTwitter className="widget__icon" />,
+          text: 'twitter',
+          to: '/'
+        },
+        {
+          icon: < FaLinkedinIn className="widget__icon"/>,
+          text: 'linkedin',
+          to: '/'
+        },
+        {
+          icon: <FaRss className="widget__icon"/>,
+          text: 'RSS',
+          to: '/'
+        },
+        {
+          icon: <FaYoutube className="widget__icon" />,
+          text: 'youtube',
+          to: '/'
+        },
+        {
+          icon: <ImPinterest className="widget__icon"/>,
+          text: 'pinterest',
+          to: '/'
+        },
+      ]
+    },
+    {
+      title: 'get in touch',
+      links: [
+        {
+          icon: <FaMapMarkerAlt className="widget__icon align-self-start"/>,
+          text: 'Megnor Comp Pvt Limited, 507-Union Trade Centre, Beside Apple Hospital, Udhana Darwaja, Ring Road, Surat, India',
+          to: '/'
+        },
+        {
+          icon: <MdPhoneIphone className="widget__icon" />,
+          text: '(91)-261 3023333',
+          to: '/'
+        },
+        {
+          icon: <FaEnvelope className="widget__icon"/>,
+          text: 'support@example.com',
+          to: '/'
+        },
+      ]
+    },
+  ],
+  posts: [
+    {
+      id: 14371,
+      image: pic5,
+      postBy: 'admin',
+      postDate: '21-10-2021',
+      name: 'post format: audio',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing beatae natus rerum officia molestias. Reiciendis, ut. ',
+
+    },
+    {
+      id: 14372,
+      image: pic6,
+      postBy: 'admin',
+      postDate: '21-10-2021',
+      name: 'post format: audio',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing beatae natus rerum officia molestias. Reiciendis, ut. ',
+
+    },
+    {
+      id: 14373,
+      image: pic7,
+      postBy: 'admin',
+      postDate: '21-10-2021',
+      name: 'post format: audio',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing beatae natus rerum officia molestias. Reiciendis, ut. ',
+
+    },
+    {
+      id: 14374,
+      image: pic8,
+      postBy: 'admin',
+      postDate: '21-10-2021',
+      name: 'post format: audio',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing beatae natus rerum officia molestias. Reiciendis, ut. ',
+
+    },
+    {
+      id: 14375,
+      image: pic6,
+      postBy: 'admin',
+      postDate: '21-10-2021',
+      name: 'post format: audio',
+      desc: 'Lorem ipsum dolor sit amet consectetur adipisicing beatae natus rerum officia molestias. Reiciendis, ut. ',
+
+    },
+  ],
   products: [
     {
       id: 11233,

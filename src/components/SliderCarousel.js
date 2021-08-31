@@ -7,7 +7,7 @@ import { FiArrowRightCircle } from "react-icons/fi";
 import "./SliderCarousel.scss";
 import { useGlobalContext } from "../context";
 
-function SliderCarousel({ children }) {
+function SliderCarousel({ children, itemsToShow = 4 }) {
   const { tabProducts } = useGlobalContext();
 
   const carouselRef = React.useRef(null);
@@ -49,7 +49,7 @@ function SliderCarousel({ children }) {
     ref: carouselRef,
     onPrevStart: onPrevStart,
     onNextStart: onNextStart,
-    itemsToShow: 4,
+    itemsToShow: itemsToShow,
     renderArrow: myArrow,
   };
 

@@ -161,6 +161,11 @@ body {
   letter-spacing: 0.05rem;
 }
 
+.top-div {
+  height: 1rem;
+  background: url("./assets/images/top_pattern.png") transparent repeat;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -231,8 +236,55 @@ body {
   }
 }
 
+button.btn--slider {
+  $position: -40px;
+  position: absolute;
+  bottom: 50%;
+  display: inherit;
+  border-radius: 100%;
+  background: url("./assets/images/background_pattern.jpg");
+  padding: 8px;
+  &.pre {
+    left: $position;
+  }
+  &.next {
+    right: $position;
+  }
+}
+
 .top-banners {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+//=======
+//main
+//=======
+#main {
+  padding-bottom: 26px;
+}
+
+.site-info a{
+  color: #EBD1AE;
+  text-decoration: none;
+  margin-left: 4px;
+  text-transform: capitalize !important;
+  &:hover{
+    color: #d15f31;
+  }
+}
+
+.align-self-start{
+  font-size: 3rem !important;
+  align-self: start !important;
+}
+
+//=========
+//input
+//=========
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

@@ -1,0 +1,22 @@
+
+.over-lay.show{
+    display: flex;
+    visibility: visible;
+    .model{
+        animation: slide-up linear 0.2s;
+    }
+}
+
+@keyframes slide-up {
+    0%{
+        transform: translateY(15%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+

@@ -3,12 +3,16 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import HeaderMiddle from "./components/HeaderMiddle";
 import Slider from "./components/Slider";
-import data from "./data";
-import Banner from "./components/Banner";
-import HorizontalTab from "./components/HorizontalTab";
+import Footer from "./components/Footer";
+
+import './App.scss';
+
+import Model from "./components/Model";
+
 
 function App() {
-  const { banners, tablist } = data;
+
+
   return (
     <>
       <Router>
@@ -20,110 +24,18 @@ function App() {
           </div>
         </div>
 
-        <section id="main">
-          <div className="container">
-            <ul className="top-banners">
-              {banners.map((item, index) => {
-                return <Banner img={item} key={index} />;
-              })}
-            </ul>
-            <HorizontalTab tabList={tablist} />
-          </div>
-          <div className="container container--bigger"></div>
-        </section>
+        <Model></Model>
 
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
-        <h1>as</h1>
+       
+
+        
         <Switch>
           <Route path="/" exact component={Home} />
         </Switch>
+
+        <Footer/>
+
+        
       </Router>
     </>
   );

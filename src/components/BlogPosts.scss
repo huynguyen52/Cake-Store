@@ -1,0 +1,22 @@
+
+// =========
+// blog-posts
+// =========
+.blog-posts{
+    background: url('../assets/images/background_pattern.jpg');
+    margin-top: 50px;;
+    padding: 0 1.2rem;
+    .short-title{
+      width: 28%;
+    }
+    border-radius: 5px;
+    &__title{
+        background-color: transparent;
+        color: #5a3320;
+        cursor: text;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-family: 'Oswald';
+    }
+  }
+  

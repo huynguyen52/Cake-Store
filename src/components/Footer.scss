@@ -1,0 +1,44 @@
+#footer{
+    background-color: #281b1a;
+    color: #EBD1AE;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    .footer__top-div{
+        border-top: 1px solid #281b1a;
+    }
+    .footer-center{
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        margin:auto;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    .footer-bottom{
+        text-align: center;
+        margin: auto;
+        padding: 10px 0 30px;
+        .footer-links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            &__item{
+                padding: 0 8px;
+               background: url('../assets/images/bkg_pipe1.jpg') no-repeat right center;
+               &:hover a{
+                   color: #d15f31;
+               }
+               &:last-child{
+                   background: none;
+               }
+                a{
+                    color: #EBD1AE;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
