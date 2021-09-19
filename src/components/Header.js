@@ -46,9 +46,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="header__logo">
+        <Link to='/' className="header__logo">
           <img src={logo} alt="logo" />
-        </div>
+        </Link>
       </div>
     </header>
   );

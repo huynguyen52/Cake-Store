@@ -1,3 +1,11 @@
+
+#slider click at "end of edge" at homepage not smooth
+#parent "propagation" on child when onclick at overlay, card
+#cannot using height:auto -> max-height but animation not blance
+#top rated product side bar hover, prevent redirect on price
+#horizontal vertical's height at topbar not exactly
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

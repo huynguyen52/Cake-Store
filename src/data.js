@@ -30,6 +30,41 @@ const data = {
   slides: [img1, img2, img3],
   banners: [banner1, banner2, banner3],
   tablist: ["featured", "latest", "best seller"],
+  categories: [
+    {
+      name: 'Books and Media',
+      children: [],
+    },
+    {
+      name: 'Brownie',
+      children: [],
+    },
+    {
+      name: 'Chocolate Candy',
+      children: [],
+    },
+    {
+      name: 'Dark Chocolate',
+      children: [
+        {
+          name: 'Choco Chips',
+          children: []
+        }
+      ],
+    },
+    {
+      name: 'Living',
+      children: [],
+    },
+    {
+      name: 'Uncategorized',
+      children: [],
+    },
+    {
+      name: 'Watches',
+      children: [],
+    },
+  ],
   contact: [
     {
       title: 'information',
@@ -194,7 +229,7 @@ const data = {
       id: 11233,
       title: "exercitation",
       category: ["books and media", "brownie"],
-      images: [cake10, cake12, cake16],
+      images: [cake10, cake12, cake16, cake18],
       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem. In fringilla mi in ligula. Pellentesque aliquam quam vel dolor. Nunc adipiscing. Sed quam odio, tempus ac, aliquam molestie, varius ac, tellus. Vestibulum ut nulla aliquam risus rutrum interdum. Pellentesque lorem. Curabitur sit amet erat quis risus feugiat viverra. Pellentesque augue justo, sagittis et, lacinia at, venenatis non, arcu. Nunc nec libero. In cursus dictum risus. Etiam tristique nisl a`,
       price: 999,
       sale: 20,

@@ -4,7 +4,7 @@ import data from "./data";
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-  const { products, posts, contact } = data;
+  const { products, posts, contact, categories } = data;
   const [tab, setTab] = useState("featured");
   const [tabProducts, setTabProducts] = useState([]);
 
@@ -20,7 +20,7 @@ const AppProvider = ({ children }) => {
 
 
   return (
-    <AppContext.Provider value={{ tab, setTab, tabProducts, posts, contact, openProductModel, modelProduct, setModelProduct }}>
+    <AppContext.Provider value={{ tab, setTab, tabProducts, posts, contact, openProductModel, modelProduct, setModelProduct, categories, products }}>
       {children}
     </AppContext.Provider>
   );

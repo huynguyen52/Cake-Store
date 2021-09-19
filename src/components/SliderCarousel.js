@@ -7,7 +7,7 @@ import { FiArrowRightCircle } from "react-icons/fi";
 import "./SliderCarousel.scss";
 import { useGlobalContext } from "../context";
 
-function SliderCarousel({ children, itemsToShow = 4 }) {
+function SliderCarousel({ children, itemsToShow = 4, upSell }) {
   const { tabProducts } = useGlobalContext();
 
   const carouselRef = React.useRef(null);
@@ -36,7 +36,9 @@ function SliderCarousel({ children, itemsToShow = 4 }) {
     const position = type === consts.PREV ? "pre" : "next";
     return (
       <button
-        className={`btn-direction btn--slider ${position}`}
+        className={`btn-direction btn--slider ${position} ${
+          upSell ? "btn--up-sells" : ""
+        }`}
         onClick={onClick}
       >
         {pointer}

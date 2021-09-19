@@ -1,0 +1,119 @@
+.summary {
+  margin-left: 22px;
+  margin-bottom: 28px;
+  .product__title {
+    color: #5a3320;
+    font-family: "Lato", sans-serif;
+    font-size: 2.2rem;
+    padding-bottom: 11px;
+  }
+  .cart {
+    margin-top: 15px;
+    padding: 15px 0;
+  }
+  .variations {
+    width: 100%;
+    .label {
+      width: 22%;
+      padding-right: 14px;
+      label {
+        width: 100%;
+        font-size: 1.3rem;
+        font-family: "Lato", sans-serif;
+        color: #5a3320;
+        margin: 5px 0;
+        display: block;
+        font-weight: bold;
+      }
+    }
+    .value {
+      width: 100%;
+      select {
+        width: 100%;
+        margin: 10px 0;
+        padding: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 1.3rem;
+        color: #5a3320;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+  }
+  .btn--add-to-cart {
+    background-color: #5a3320;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .sigle-variation__wrapper {
+    margin: 10px 0 5px;
+  }
+  .clear {
+    font-size: 1.3rem;
+    color: #777777;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    visibility: hidden;
+    &.active {
+      visibility: visible;
+    }
+    &:hover {
+      color: #bc482f;
+    }
+  }
+  .add-to-wishlist__wrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #777777;
+    &:hover .icon {
+      color: #bc482f;
+    }
+    .icon {
+      font-size: 1.3rem;
+    }
+    .add-to-wishlist {
+      text-decoration: none;
+      font-size: 1.4rem;
+      margin-left: 10px;
+      color: #777777;
+      border: none;
+      background-color: transparent;
+      &:hover {
+        color: #bc482f;
+      }
+    }
+  }
+  .product-meta {
+    .sku__wrapper {
+      display: inline-block;
+      width: 100%;
+      color: #5a3320;
+      font-weight: 700;
+      margin: 5px 0;
+      font-size: 1.3rem;
+      font-family: "Lato";
+      text-transform: uppercase;
+    }
+    .posted_in,
+    .tag_as {
+      display: block;
+      font-size: 1.3rem;
+      color: #5a3320;
+      font-weight: 700;
+      margin: 5px 0;
+      .tag {
+        background-color: transparent;
+        display: inline;
+        color: #777777;
+        font-weight: bold;
+        font-size: 1.3rem;
+        padding: 0;
+        margin: 0;
+        &:hover {
+          color: #bc482f;
+        }
+      }
+    }
+  }
+}

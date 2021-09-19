@@ -250,6 +250,18 @@ button.btn--slider {
   &.next {
     right: $position;
   }
+  &.btn--up-sells {
+    top: -54px;
+    background: transparent;
+    font-size: 2.6rem;
+    color: #a0a0a0;
+    &.pre {
+      left: 90%;
+    }
+    &.next {
+      right: 0;
+    }
+  }
 }
 
 .top-banners {
@@ -258,24 +270,17 @@ button.btn--slider {
   align-items: center;
 }
 
-//=======
-//main
-//=======
-#main {
-  padding-bottom: 26px;
-}
-
-.site-info a{
-  color: #EBD1AE;
+.site-info a {
+  color: #ebd1ae;
   text-decoration: none;
   margin-left: 4px;
   text-transform: capitalize !important;
-  &:hover{
+  &:hover {
     color: #d15f31;
   }
 }
 
-.align-self-start{
+.align-self-start {
   font-size: 3rem !important;
   align-self: start !important;
 }

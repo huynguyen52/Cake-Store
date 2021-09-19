@@ -1,0 +1,21 @@
+
+.product-tag__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag{
+    background-color: #d5cfc4;
+    color: #5a3320;
+    padding: 3px 10px;
+    margin: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    &:hover{
+        background-color: #5a3320;
+        color: #fff;
+    }
+}

@@ -1,5 +1,5 @@
 .card {
-  width: 23.7rem;
+  width: 100%;
   text-align: center;
   font-size: 1.4rem;
   font-family: "Lato", sans-serif;
@@ -7,7 +7,6 @@
   display: inline-block;
   padding: 1.5rem;
   transition: 0.3s;
-  cursor: pointer;
   &:hover {
     .card__title {
       color: #5a3320;
@@ -33,6 +32,8 @@
     overflow: hidden;
     position: relative;
     border-radius: 0.5rem;
+    cursor: pointer;
+    width: 220px;
 
     .btn {
       position: absolute;
@@ -70,10 +71,12 @@
   }
   &__title {
     color: #d15f31;
+    cursor: pointer;
   }
   &__img {
     border-radius: 0.5rem;
     width: 100%;
+    border: 1px solid #e2ddd1;
   }
   .btn {
     margin: auto;

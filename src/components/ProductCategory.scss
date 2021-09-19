@@ -1,0 +1,47 @@
+.tree-view{
+    margin: 0 0 40px;
+    &__list &__list{
+        margin-left: 10px;
+    }
+    &__item{
+        padding: 4px 0;
+        position: relative;
+        background-color: #f8f7f3;
+        a,.toggle{
+            font-size: 1.4rem;
+            font-family: 'Lato', sans-serif;
+            color: #777777;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        a:hover,.toggle:hover{
+            color: #BC482F;
+        }
+        .toggle{
+            cursor: pointer;
+            &.active{
+                &::after{
+                    content: '\2796';
+                }
+                & + .tree-view__list{
+                    max-height: 100px;
+                }
+            }
+            &::after{
+                padding-right: 12px;
+                content: '\2795';
+                position: absolute;
+                right: 0;
+                font-size: 0.7rem;
+                transition: 0.6s;
+            }
+            & + .tree-view__list{
+                max-height: 0;
+                transition: 0.6s linear;
+            }
+        }
+    }
+}
+
+
+

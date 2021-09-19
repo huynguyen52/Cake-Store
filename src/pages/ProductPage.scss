@@ -1,0 +1,30 @@
+.product-page {
+  display: flex;
+
+  .sidebar {
+    flex: 0 0 230px;
+    aside {
+      margin-bottom: 40px;
+    }
+  }
+  .content {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+}
+.product {
+  display: flex;
+  .summary {
+    flex-grow: 1;
+  }
+}
+
+.widget-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #5a3320;
+  padding: 5px 0 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #d9d6c8;
+}

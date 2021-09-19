@@ -5,10 +5,22 @@ import HorizontalTab from "../components/HorizontalTab";
 import BlogPosts from "../components/BlogPosts";
 import data from "../data";
 
+import './Home.scss';
+
+import Slider from "../components/Slider";
+
 function Home() {
   const { banners, tablist } = data;
 
-  return <section id="main">
+  return (
+    <>
+    <div className="container">
+          <div className="header-middle__wrapper">
+            {/* <HeaderMiddle /> */}
+            <Slider />
+          </div>
+        </div>
+       <div id="main">
           <div className="container">
             <ul className="top-banners">
               {banners.map((item, index) => {
@@ -20,7 +32,9 @@ function Home() {
           <div className="container container--bigger">
             <BlogPosts/>
           </div>
-        </section>;
+        </div>
+              </>
+        );
 }
 
 export default Home;
